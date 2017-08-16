@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="../../../js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<p>12345</p>
+<button type="button">Click me</button>
+</body>
+</html>
+<!--<script>-->
+<!--if(navigator.cookieEnabled){-->
+<!--alert('游览器允许使用Cookie');-->
+<!--}else {-->
+<!--alert('游览器禁用Cookie');-->
+<!--}-->
+<!--</script>-->
+<script>
+    //    for (var i = 0; i < 10; i++) {
+    //        document.writeln(i + "<br/>");
+    //        if (i > 4) {
+    //            throw new Error("用户自定义错误");
+    //        }
+    //    }
+    $(document).ready(function () {
+        $("button").click(function () {
+            var timestamp = new Date().getTime();
+            $("p").text(timestamp);
+        });
+    });
+</script>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--文件上传<br/>-->
+<!--<input id="file" name="file" type="file"/>-->
+<!--<br/>-->
+<!--<input type="image" src="/src/html/2017/7-31/picture1.png" alt="IMAGE"/>-->
+<!--<input type="range" min="0" max="100" step="20"/>-->
+
+<input id="images" type="file" multiple="image/*"/>
+<input type="button" value="显示文件" onclick="showDetailes()"/>
+
+<script type="text/javascript">
+    var showDetailes = function () {
+        var imageEle = document.getElementById("images");
+        var fileList = imageEle.files;
+        for (var i = 0; i < fileList.length; i++) {
+            var file = fileList[i];
+            var div = document.createElement("div");
+            div.innerHTML = "第" + (i + 1) + "个文件的文件名是:" + file.name
+                + ",该文件的类型是:" + file.type
+                + ",该文件大小为:" + file.size;
+            document.body.appendChild(div);
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+<button>按钮</button>
+<p>点我消失</p>
+</body>
+</html>
+<script>
+    $(document).ready(function () {
+        $("button").click(function () {
+            $("p").fadeout(3000);
+        });
+    });
+
+</script>

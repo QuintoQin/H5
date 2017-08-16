@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div ms-controller="list">
+    <span ms-mouseover="changeUl(gg)">公告</span>
+    <span ms-mouseover="changeUL(bd)">媒体报道</span>
+    <a ms-href="'#!/'+ more_name">{{more_text}}</a>
+    <ul>
+        <li ms-repeat="infoList">
+            <a ms-href="'#!/'+ more_name + '/' + el.id" ms-title="el.title">{{el.title}}</a>
+        </li>
+    </ul>
+</div>
+</body>
+</html>
