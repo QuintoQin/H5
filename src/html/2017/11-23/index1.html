@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../../../js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+
+</body>
+<script>
+    $.post("http://tb.moonvila.com/Api/User/apotAgent", {
+        "wcopenid": "1", "apotaddress": "1", "apotdate": "1", "apottel": "1"
+    }, function (result) {
+        alert(result.status);
+    },"jsonp");
+</script>
+</html>

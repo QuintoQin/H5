@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--//<a href="www.baidu.com" onclick="return confirm('Are you OK')">OKOKOK</a>-->
+<input type="button" value="单击" onclick="show('您单击了按钮' + ++n + '次。<br/>');">
+</body>
+</html>
+<script type="text/javascript">
+    //window.status = "自定义状态栏文字";
+    //    var loc = window.location;
+    //    var locStr = "当前的location信息是:\n";
+    //    for (var propname in loc) {
+    //        locStr += propname + ': ' + loc[propname] + '\n';
+    //    }
+    //    alert(locStr)
+//    var n = 0;
+//    var win = null;
+//    var show = function (msg) {
+//        if ((win == null) || (win.closed)) {
+//            win = window.open("", "console", "width=400,height=250,resizable");
+//            win.document.open("text/html");
+//        }
+//        win.focus();
+//        win.document.write(msg);
+//    }
+    localStorage.setItem("message","Hello World");
+</script>

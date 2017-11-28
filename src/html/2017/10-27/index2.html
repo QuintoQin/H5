@@ -1,0 +1,59 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    <title> New Document </title>
+    <meta name="Generator" content="EditPlus">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+</head>
+
+
+<body>
+<table align="center" width="500px" height="200px" border="1">
+    <tr>
+        <td><a onclick="test(this);" href="#">1</a></td>
+        <td><a onclick="test(this);" href="#">2</a></td>
+        <td><a onclick="test(this);" href="#">3</a></td>
+    </tr>
+    <tr>
+        <td><a onclick="test(this);" href="#">4</a></td>
+        <td><a onclick="test(this);" href="#">5</a></td>
+        <td><a onclick="test(this);" href="#">6</a></td>
+    </tr>
+
+
+</table>
+
+
+<div id="outer" style="display:none;width: 200px; position: absolute; left: 100px;border-style:double;border-width:5pt; border-color:#00cc33;">
+
+    <div id="inner" style="left: 100px; top: 120px;">
+        里面的div2  里面的div2里面的div2里面的div2里面的div2里面的div2里面的div2里面的div2里面的div2里面的div2里面的div2里面的div2里面的div2里面的div2里面的div2
+    </div>
+    <div id="inner" style="text-align:center;">
+        <input type="button" value="close" onclick="$('#outer').hide(300);">
+    </div>
+</div>
+
+
+</body>
+</html>
+<script type="text/javascript">
+    <!--
+    function test(obj)
+    {
+        $("#outer").hide(300);
+        $("#outer").show(300);
+        var offset = $(obj).offset();
+        var x = offset.left;
+        var y = offset.top;
+//$("#outer").offset().left=x;
+//$("#outer").offset().top=y;
+        document.getElementById("outer").style.left=x-220;
+        document.getElementById("outer").style.top=y+20;
+//alert(x+"---"+y);
+    }
+    //-->
+</script>

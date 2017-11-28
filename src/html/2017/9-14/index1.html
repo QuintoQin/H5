@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="application/javascript" src="../../../js/vue.js"></script>
+</head>
+<body>
+<ul id="example-1">
+    <li v-for="item in items">
+        {{item.message}}
+    </li>
+</ul>
+</body>
+</html>
+<script>
+    var vm = new Vue({
+        el: '#example-1',
+        data: {
+            items: [
+                {message: 'A'},
+                {message: 'B'},
+                {message: 'C'},
+                {message: 'D'},
+                {message: 'E'},
+                {message: 'F'}
+            ]
+        }
+    })
+</script>
+

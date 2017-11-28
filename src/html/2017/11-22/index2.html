@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui" name="viewport">
+    <title>Title</title>
+    <style>
+        @media screen and (min-width: 320px) and (max-width: 359px) {
+            html {
+                font-size: 12.8px;
+            }
+        }
+
+        @media screen and (min-width: 360px) and (max-width: 374px) {
+            html {
+                font-size: 14.4px;
+            }
+        }
+
+        @media screen and (min-width: 375px) and (max-width: 385px) {
+            html {
+                font-size: 15px;
+            }
+        }
+
+        @media screen and (min-width: 386px) and (max-width: 392px) {
+            html {
+                font-size: 15.44px;
+            }
+        }
+
+        @media screen and (min-width: 393px) and (max-width: 400px) {
+            html {
+                font-size: 16px;
+            }
+        }
+
+        @media screen and (min-width: 401px) and (max-width: 414px) {
+            html {
+                font-size: 16.48px;
+            }
+        }
+
+        @media screen and (min-width: 750px) and (max-width: 799px) {
+            html {
+                font-size: 30.72px;
+            }
+        }
+
+        .div1 {
+            width: 10rem;
+            height: 10rem;
+            background-color: #00cc33;
+        }
+    </style>
+</head>
+<body>
+
+<div>
+    <span class="sp">1</span>
+</div>
+</body>
+<script>
+    //    setCookie("cook", "123")
+    //    //写cookies
+    //    function setCookie(name, value) {
+    //        var Days = 10;
+    //        var exp = new Date();
+    //        exp.setTime(exp.getTime() + Days * 60 * 60 *1000 );
+    //        document.cookie = name + "=" + escape(value) + ";expires=" + exp.toGMTString();
+    //        alert(name + "=" + escape(value) + ";expires=" + exp.toGMTString())
+    //    }
+    //
+    //    //读取cookis
+    //    function getCookie(name)
+    //    {
+    //        var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+    //        if(arr=document.cookie.match(reg))
+    //            return unescape(arr[2]);
+    //        else
+    //            return null;
+    //    }
+    //
+    //    //写cookies
+    //    function setCookie(name,value)
+    //    {
+    //        var Days = 1;
+    //        var exp = new Date();
+    //        exp.setTime(exp.getTime() + Days*60*60);
+    //        document.cookie = name + "="+ escape (value) + ";expires=" + exp.toGMTString();
+    //    }
+</script>
+<script>
+    var time = setInterval(function () {
+        var time = 0;
+        time++;
+        var text = document.getElementsByClassName("sp");
+        text.innerHTML(time);
+        alert(1);
+    }, 1);
+</script>
+</html>

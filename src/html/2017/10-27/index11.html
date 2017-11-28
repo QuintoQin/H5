@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../../../js/zepto.min.js"></script>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    //18-60
+    //    var pattern = /^1[89]|[2-5]\d|60$/;
+    //    var str = "62";
+    //    alert(pattern.test(str));
+    $.ajax({
+        type: 'POST',
+        url: 'http://tt.moonvila.com/Admin/AgentPerson/login',
+        // 请求携带的数据
+        data: {"tel":"13875412569","password":"123456"},
+        // 返回的数据类型
+        dataType: 'json',
+        timeout: 5000,  //设置五秒钟超时时间
+        context: $('body'),
+        success: function (data,staus) {
+            //处理获取的数据
+            console.log(data);
+        },
+        error: function (xhr, errorType, error) {
+            //显示错误信息
+            console.log(xhr);
+        }
+    });
+</script>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="m"></p>
+</body>
+</html>
+<script>
+    var p = document.getElementById("m");
+    setCookie("Qin");
+    p.innerHTML = getCookie();
+
+    function setCookie(name) {
+        document.cookie = name;
+    }
+
+    function getCookie() {
+        if (document.cookie.length > 0) {
+            return document.cookie;
+        }else {
+            return "null";
+        }
+    }
+</script>
